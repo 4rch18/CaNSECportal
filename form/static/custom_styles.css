@@ -1,0 +1,23 @@
+.sample > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: #392123 center / cover;
+  background: -webkit-radial-gradient(#555, #333, #111); /* For Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#555, #333, #111); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#555, #333, #111); /* For Fx 3.6 to 15 */
+  background: radial-gradient(#555, #333, #111); /* Standard syntax (must be last) */
+
+  /* Reference for radial backgrounds */
+    /* https://www.w3schools.com/css/css3_gradients.asp */
+
+  /* For image background */
+    /* background: url('https://img00.deviantart.net/c2d7/i/2010/136/e/f/water_by_gatis_vilaks.jpg') center / cover; */
+}
+
+.mdl-demo section .section__text {
+  padding-bottom: 8px;
+}
+
+.mdl-demo section.section--center .section__text:not(:last-child) {
+  border-bottom: 0px solid rgba(0,0,0,.13);
+}

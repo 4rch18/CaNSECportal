@@ -1,0 +1,33 @@
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+    <div class="mdl-card sample mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">{{ indicator.indicator_text }}</h2>
+        </div>
+
+        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+            <!-- h4 class="mdl-cell mdl-cell--12-col">Details</h4 -->
+
+            {% for subindicator in subindicator_list %}
+                {% if subindicator.indicator == indicator  %}
+                    {% include 'form/subindicator_row.html' %}
+                {% endif %}
+            {% endfor %}
+
+
+        </div>
+
+        <!--div class="mdl-card__actions">
+          <a href="#" class="mdl-button">Read our features</a>
+        </div-->
+    </div>
+    <!--button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+        <i class="material-icons">more_vert</i>
+    </button>
+    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+        <li class="mdl-menu__item">Lorem</li>
+        <li class="mdl-menu__item" disabled>Ipsum</li>
+        <li class="mdl-menu__item">Dolor</li>
+    </ul-->
+</section>
